@@ -11,7 +11,7 @@
 	<div id ="dayban" style="  margin-left: all;">
 		<div id ="day1" align="center" style="float: left; border: 2px solid; width: 300px; height: 200px; overflow: auto;" >
 			<div id ="ban1" style="font-size: 1.5em; ">
-				<a href=""> Sinh viên 1 </a>&nbsp;
+				<a > Sinh viên 1 </a>&nbsp;
 				<a > Sinh viên 2 </a>
 			</div>
 			
