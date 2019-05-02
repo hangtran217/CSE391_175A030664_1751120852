@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tạo form và các điều khiển trên form</title>
+</head>
+<body>
+	<form method="Get" name="my_form"></form>
+		<table cellpadding="5" cellspacing="0" border="1px" width="100%" >
+			<tr>
+        		<td>
+            		Mã người dùng
+        		</td>
+				<td>
+					<input type="text" name="manguoidung" form="my_form" />
+				</td>
+			</tr>
+			<tr>
+				<td>Mật khẩu</td>
+				<td>
+					<input type="password" name="matkhau" form="my_form" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;">
+					<input type="button" value="Đồng ý" onclick="dongy(my_form.manguoidung.value);">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;" >
+					<input id="giatri" form="my_form">
+				</td>					
+					<script>
+					function dongy(value) {
+  						my_form.giatri.value=value;
+					}
+					</script>
+
+			</tr>
+		</table>
+
+</body>
+</html>
