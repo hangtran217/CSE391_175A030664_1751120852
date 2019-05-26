@@ -6,3 +6,7 @@ table{
 tr.1{
 	vertical-align: top;
 }
+
+*{
+	box-sizing: border-box;
+}
