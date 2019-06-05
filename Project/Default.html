@@ -9,17 +9,30 @@
 </head>
 <body>
 	<nav class="topmenu">
-		<ul>
-	  		<li class="menu1"><a href="#home"><i class="fa fa-phone"></i>(028) 372 52002</a></li>
-	  		<li class="menu2" ><a href="#news"><i class="fa fa-envelope-o"><i> </i></i>info@uit.edu.vn</a></li>
+		<div class="phone-mail">
+			<ul>
+	  		<li class="menu1"><a href="#home"><i class="fa fa-phone">&nbsp;&nbsp;</i>(028) 372 52002</a></li>
+	  		<li class="menu1" ><a href="#news"><i class="fa fa-envelope-o">&nbsp;&nbsp;</i>info@uit.edu.vn</a></li>
+			</ul>
+		</div>
+		
+		
+
+		<div class="co">
+			<ul>
+		  	<li><a href="#about"><img src="images/co-vn.jpeg"></a></li>
+		  	<li><a href="#about"><img src="images/co-anh.jpeg"></a></li>
+			</ul>
+		</div>
+		<div class="topmenu1">
+			<ul>	
 		  	<li><a href="#about">Tuyển sinh</a></li>
 		  	<li><a href="#about">Thư viện</a></li>
 		  	<li><a href="#about">Webmail CB</a></li>
 		  	<li><a href="#about">Webmail SV</a></li>
 		  	<li><a href="#about">Lịch công tác</a></li>
-		  	<li><a href="#about"><img src="images/co-vn.jpeg"></a></li>
-		  	<li><a href="#about"><img src="images/co-anh.jpeg"></a></li>
-		</ul>
+			</ul>
+		</div>
 	</nav>
 	<div class="header">
 		<ul class="images-header">
@@ -42,10 +55,16 @@
 	</div>
 
 	<div class="navbar">
-  		<a href="#home" style="margin-left: 25px;">Trang chủ</a>
-  		<a href="#news">Tin tức</a>
+  		
+  		<a href="https://www.uit.edu.vn/" class="dropdown-toggle" title="Trang chủ">
+          	<i class="fa fa-home fa-lg"></i>  Trang chủ  <i class="fa fa-caret-down"></i>
+        </a>
+        <a href="https://www.uit.edu.vn/" class="dropdown-toggle" title="Tin tức"> Tin tức  <i class="fa fa-caret-down"></i>
+          
+        </a>
   		<div class="dropdown">
-    		<button class="dropbtn">Giới thiệu 
+
+    		<button class="dropbtn" title="Giới thiệu">Giới thiệu 
       			<i class="fa fa-caret-down"></i>
     		</button>
 	    	<div class="dropdown-content">
@@ -75,34 +94,34 @@
 
   			<!-- Full-width images with number and caption text -->
   			<div class="mySlides fade">
-    <img src="images/trangchu/totnghiep_slideshow.jpeg" style="width:100%">
-  </div>
 
-  <div class="mySlides fade">
-    <img src="images/trangchu/tuyendung_slideshow.jpeg" style="width:100%">
-  </div>
+    			<img src="images/trangchu/totnghiep_slideshow.jpeg" style="width:100%">
+  			</div>
 
-  <div class="mySlides fade">
-    <img src="images/trangchu/tuyendung_giangvien_slideshow.jpeg" style="width:100%">
-  </div>
-  <div class="mySlides fade">
-    <img src="images/trangchu/anh_slideshow_aun-qa.jpeg" style="width:100%">
-  </div>
-  <div class="mySlides fade">
-    <img src="images/trangchu/daotao_tmdt_khdl_slideshow.jpeg" style="width:100%">
-  </div>
+  			<div class="mySlides fade">
+    			<img src="images/trangchu/tuyendung_slideshow.jpeg" style="width:100%">
+  			</div>
 
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
+  			<div class="mySlides fade">
+    			<img src="images/trangchu/tuyendung_giangvien_slideshow.jpeg" style="width:100%">
+  			</div>
+  			<div class="mySlides fade">
+    			<img src="images/trangchu/anh_slideshow_aun-qa.jpeg" style="width:100%">
+  			</div>
+  			<div class="mySlides fade">
+    			<img src="images/trangchu/daotao_tmdt_khdl_slideshow.jpeg" style="width:100%">
+  			</div>
 
-<div>
-	<div class="images"><img src="images/trangchu/thong_tin_tuyen_dung.jpeg"></div>
-	<div class="images"><img src="images/trangchu/khao_sat_nhu_cau_hoc_lien_thong.jpeg"></div>
-	<div class="images"><img src="images/trangchu/tuyen_sinh_dai_hoc.jpeg"></div>
-	<div class="images" style="margin-right: 0px"><img src="images/trangchu/tuyen_sinh_sau_dai_hoc.jpeg"></div>
-</div>
+	  		<!-- Next and previous buttons -->
+		  	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+	<div class="images">
+		<div><img src="images/trangchu/thong_tin_tuyen_dung.jpeg"></div>
+		<div><img src="images/trangchu/khao_sat_nhu_cau_hoc_lien_thong.jpeg"></div>
+		<div><img src="images/trangchu/tuyen_sinh_dai_hoc.jpeg"></div>
+		<div><img src="images/trangchu/tuyen_sinh_sau_dai_hoc.jpeg"></div>
+	</div>
 
 <div>
 	<img class="image1" src="images/trangchu/chuc-mung-nam-moi.jpeg">
@@ -115,78 +134,79 @@
 
 <div class="content1">
 	<img src="Images/trangchu/tin_tuc_uit.jpeg">
-	<h4>Danh sách đề cử tham gia Hội đồng Giáo sư Cơ sở của trường Đại...</h4>
+	<a href="#"> Danh sách đề cử tham gia Hội đồng Giáo sư Cơ sở của trường Đại...</a>
 	<p>Căn cứ Điều 12 của Quyết định 37/2018/QĐ-TTg ngày 31/08/2018 của Thủ tướng Chính phủ về việc Ban hành quy định tiêu chuẩn, thủ tục xét công nhận đạt...</p>
 	
 	<ul>
 		<li><a href="">Kế hoạch tổ chức “Ngày Pháp luật nước Cộng hòa xã hội chủ nghĩa... (17-10-2018)</a></li>
-		<li><a href="">Kế hoạch tổ chức “Ngày Pháp luật nước Cộng hòa xã hội chủ nghĩa... (17-10-2018)</a></li>
-		<li><a href="">Kế hoạch tổ chức “Ngày Pháp luật nước Cộng hòa xã hội chủ nghĩa... (17-10-2018)</a></li>
+		<li><a href="">Thông báo tổ chức Hội thảo giới thiệu về nghiên cứu khoa học cho... (07-10-2018)</a></li>
+		<li><a href="">Thư ngỏ Cựu sinh viên tham gia khảo sát về tình hình việc làm... (21-09-2018)</a></li>
+		<li><a href="">Thông báo về việc tham dự chương trình tư vấn tuyển sinh sau đại... (15-08-2018)</a></li>
 		
 	<button class="button">Xem thêm</button>
 </div>
 
 <div class="content1">
 	<img src="images/trangchu/hoi_nghi_sv.jpeg">
-	<h4>Danh sách đề cử tham gia Hội đồng Giáo sư Cơ sở của trường Đại...</h4>
-	<p>Căn cứ Điều 12 của Quyết định 37/2018/QĐ-TTg ngày 31/08/2018 của Thủ tướng Chính phủ về việc Ban hành quy định tiêu chuẩn, thủ tục xét công nhận đạt...</p>
+	<a class="header-content" href="#"> Sinh viên UIT đạt giải Nhất và giải Ba tại Cuộc thi “Vietnam...</a>
+	<p>Ngày 2/6/2019, cuộc thi “Vietnam Smart Energy Hackathon 2019” đã chính thức khép lại với nhiều ý tưởng sáng tạo độc đáo và thiết thực trong lĩnh vực...</p>
 	<ul>
-		<li><a href="">Kế hoạch tổ chức “Ngày Pháp luật nước Cộng hòa xã hội chủ nghĩa... (17-10-2018)</a></li>
-		<li><a href="">Kế hoạch tổ chức “Ngày Pháp luật nước Cộng hòa xã hội chủ nghĩa... (17-10-2018)</a></li>
-		<li><a href="">Kế hoạch tổ chức “Ngày Pháp luật nước Cộng hòa xã hội chủ nghĩa... (17-10-2018)</a></li>
-		<li><a href="">Kế hoạch tổ chức “Ngày Pháp luật nước Cộng hòa xã hội chủ nghĩa... (17-10-2018)</a></li>
+		<li><a href="">Hội nghị Sinh viên năm học 2018 - 2019 (27-05-2019)</a></li>
+		<li><a href="">Ngày hội NET Day 2019 thu hút hơn 400 trăm sinh viên (21-05-2019)</a></li>
+		<li><a href="">Trường Đại học Công nghệ Thông tin làm việc với Lãnh sự quán Hoa... (19-05-2019)</a></li>
+		<li><a href="">Ngày hội việc làm Japan IT Job Fair 2019 tại Trường Đại học... (13-05-2019)</a></li>
 	</ul>
 	<button class="button">Xem thêm</button>
 </div>
 
 <div class="content1">
 	<img src="images/trangchu/tin_tuc_uit.jpeg">
-	<h4>Danh sách đề cử tham gia Hội đồng Giáo sư Cơ sở của trường Đại...</h4>
-	<p>Căn cứ Điều 12 của Quyết định 37/2018/QĐ-TTg ngày 31/08/2018 của Thủ tướng Chính phủ về việc Ban hành quy định tiêu chuẩn, thủ tục xét công nhận đạt...</p>
+	<a class="header-content" href="#"> Thông báo Vv xét tuyển vào đại học chính quy năm 2019 theo...</a>
+	<p>Trường Đại học Công nghệ Thông tin – ĐHQG-HCM thông báo về việc xét tuyển vào đại học chính quy năm 2019 theo phương thức sử dụng chứng chỉ quốc tế...</p>
 	<ul>
-		<li><a href="">Kế hoạch tổ chức “Ngày Pháp luật nước Cộng hòa xã hội chủ nghĩa... (17-10-2018)</a></li>
-		<li><a href="">Kế hoạch tổ chức “Ngày Pháp luật nước Cộng hòa xã hội chủ nghĩa... (17-10-2018)</a></li>
-		<li><a href="">Kế hoạch tổ chức “Ngày Pháp luật nước Cộng hòa xã hội chủ nghĩa... (17-10-2018)</a></li>
-		<li><a href="">Kế hoạch tổ chức “Ngày Pháp luật nước Cộng hòa xã hội chủ nghĩa... (17-10-2018)</a></li>
+		<li><a href="">[2019] Thông báo V/v tuyển thẳng, ưu tiên xét tuyển vào đại học... (05-04-2019)</a></li>
+		<li><a href="">[2019] Hệ thống hỗ trợ công tác thi và tuyển sinh của Bộ GD&... (03-04-2019)</a></li>
+		<li><a href="">[2019] Đề án tuyển sinh năm 2019 (26-03-2019)</a></li>
+		<li><a href="">[2019] Các mốc thời gian kỳ thi tuyển sinh 2019 (14-03-2019)</a></li>
 	</ul>
 	<button class="button">Xem thêm</button>
 </div>
 
 <div class="content1">
 	<img src="images/trangchu/tin_tuc_uit.jpeg">
-	<h4>Danh sách đề cử tham gia Hội đồng Giáo sư Cơ sở của trường Đại...</h4>
-	<p>Căn cứ Điều 12 của Quyết định 37/2018/QĐ-TTg ngày 31/08/2018 của Thủ tướng Chính phủ về việc Ban hành quy định tiêu chuẩn, thủ tục xét công nhận đạt...</p>
+	<a class="header-content" href="#"> Thông báo lịch thi tuyển sinh sau đại học đợt 1 năm 2019</a>
+	<p>LỊCH THI: Ngày thi Buổi sáng Buổi chiều 18/5/2019 Môn Toán cho máy tính (6g45 có mặt tại phòng thi) Môn Tin học cơ sở (13g15 có mặt tại phòng thi) 19...</p>
 	<ul>
-		<li><a href="">Kế hoạch tổ chức “Ngày Pháp luật nước Cộng hòa xã hội chủ nghĩa... (17-10-2018)</a></li>
-		<li><a href="">Kế hoạch tổ chức “Ngày Pháp luật nước Cộng hòa xã hội chủ nghĩa... (17-10-2018)</a></li>
-		<li><a href="">Kế hoạch tổ chức “Ngày Pháp luật nước Cộng hòa xã hội chủ nghĩa... (17-10-2018)</a></li>
-		<li><a href="">Kế hoạch tổ chức “Ngày Pháp luật nước Cộng hòa xã hội chủ nghĩa... (17-10-2018)</a></li>
+		<li><a href="">Thông báo nhận giấy báo thi tuyển sinh Sau đại học đợt 1 năm 2019 (14-05-2019)</a></li>
+		<li><a href="">Thông báo V/v gia hạn thời gian nộp hồ sơ dự thi TSSĐH đợt 1 năm... (02-05-2019)</a></li>
+		<li><a href="">Thông báo về việc tham dự chương trình tư vấn tuyển sinh sau đại... (25-02-2019)</a></li>
+		<li><a href="">Thông báo xét tuyển trình độ thạc sĩ đợt 1 năm 2019 (08-01-2019)</a></li>
 	</ul>
 	<button class="button">Xem thêm</button>
 </div>
 
 <div class="content1">
 	<img src="images/trangchu/chuong_trinh_tien_tien.jpeg">
-	<h4>Danh sách đề cử tham gia Hội đồng Giáo sư Cơ sở của trường Đại...</h4>
-	<p>Căn cứ Điều 12 của Quyết định 37/2018/QĐ-TTg ngày 31/08/2018 của Thủ tướng Chính phủ về việc Ban hành quy định tiêu chuẩn, thủ tục xét công nhận đạt...</p>
+	<a class="header-content" href="#"> Chương trình tiên tiến: Lựa chọn ưu việt của sinh viên hiện đại</a>
+	<p>Với tấm bằng kỹ sư/cử nhân công nghệ thông tin, không khó để sinh viên tốt nghiệp kiếm được việc làm với mức lương nghìn đô. Điều này cho thấy sức...</p>
 	<ul>
-		<li><a href="">Kế hoạch tổ chức “Ngày Pháp luật nước Cộng hòa xã hội chủ nghĩa... (17-10-2018)</a></li>
-		<li><a href="">Kế hoạch tổ chức “Ngày Pháp luật nước Cộng hòa xã hội chủ nghĩa... (17-10-2018)</a></li>
-		<li><a href="">Kế hoạch tổ chức “Ngày Pháp luật nước Cộng hòa xã hội chủ nghĩa... (17-10-2018)</a></li>
-		<li><a href="">Kế hoạch tổ chức “Ngày Pháp luật nước Cộng hòa xã hội chủ nghĩa... (17-10-2018)</a></li>
+		<li><a href="">Sinh viên Sài Gòn 'hẹn' ăn trưa cùng hiệu trưởng (14-03-2019)</a></li>
+		<li><a href="">Cơ hội kiếm tiền từ đề tài tốt nghiệp ngành công nghệ thông tin (23-01-2019)</a></li>
+		<li><a href="">Công bố 20 gương mặt Nữ sinh viên xuất sắc nhận Phần thưởng Nữ... (15-12-2018)</a></li>
+		<li><a href="">Thủ lĩnh 'hotboy' thủ khoa: vượt qua thách thức nhờ... (08-12-2018)</a></li>
 	</ul>
 	<button class="button">Xem thêm</button>
 </div>
 
 <div class="content1">
 	<img src="images/trangchu/the_ATM.jpeg">
-	<h4>Danh sách đề cử tham gia Hội đồng Giáo sư Cơ sở của trường Đại...</h4>
-	<p>Căn cứ Điều 12 của Quyết định 37/2018/QĐ-TTg ngày 31/08/2018 của Thủ tướng Chính phủ về việc Ban hành quy định tiêu chuẩn, thủ tục xét công nhận đạt...</p>
+	<a class="header-content" href="#"> Cảnh báo nguy cơ thẻ ATM bị đánh cắp dữ liệu</a>
+	<p>TTO - Ngân hàng VietinBank vừa cảnh báo hiện tượng kẻ xấu thực hiện thủ đoạn skimming - đánh cắp dữ liệu, làm thẻ giả và rút tiền trái phép - tại hệ...</p>
 	<ul>
-		<li><a href="">Kế hoạch tổ chức “Ngày Pháp luật nước Cộng hòa xã hội chủ nghĩa... (17-10-2018)</a></li>
-		<li><a href="">Kế hoạch tổ chức “Ngày Pháp luật nước Cộng hòa xã hội chủ nghĩa... (17-10-2018)</a></li>
-		<li><a href="">Kế hoạch tổ chức “Ngày Pháp luật nước Cộng hòa xã hội chủ nghĩa... (17-10-2018)</a></li>
-		<li><a href="">Kế hoạch tổ chức “Ngày Pháp luật nước Cộng hòa xã hội chủ nghĩa... (17-10-2018)</a></li>
+		<li><a href=""> Google Maps thử nghiệm tính năng tránh đi sai đường (13-02-2019)</a></li>
+		<li><a href="">5G là gì? 5G sẽ làm hoàn hảo mạng 4G (04-01-2019)</a></li>
+		<li><a href="">Mã độc tống tiền mới lại lây lan tại Việt Nam (12-12-2018)</a></li>
+		<li><a href="">Phát hiện 63 lỗi mới trên Windows mà người dùng cần phải cập... (19-11-2018)</a></li>
 	</ul>
 	<button class="button">Xem thêm</button>
 </div>
@@ -239,18 +259,23 @@ Trường Đại học Công nghệ Thông tin trở thành trường đại h�
 	<div class="content-right"> 
 		<ul>
 			<li>
-				<i id="facebook" class="fa fa-facebook fb-btn"></i><a href="https://www.facebook.com/UIT.Fanpage"></a>&nbsp;	
+				<a class="fa fa-facebook fb-btn" href="https://www.facebook.com/UIT.Fanpage"></a>&nbsp;	
 			</li>
 			<li>
-				<i class="fa fa-youtube yt-btn"></i><a href="https://www.youtube.com/user/uitvietnam" target="_blank"></a>&nbsp;
+				<a class="fa fa-youtube yt-btn" href="https://www.youtube.com/user/uitvietnam" target="_blank"><a ></a>&nbsp;
 				</a>
 			</li>
 			<li>
-				<i class="fa fa-arrow-up arr-btn" href="#" id="top"></i><a href="#"></a>
+				<a class="fa fa-arrow-up arr-btn" href="#"></a>
 			</li>
 		</ul> 
 	</div>
 </div>
+
+<div class="ads-right">
+	<a href="https://www.uit.edu.vn/tuyen-tien-si-nganh-cntt-truyen-thong" target="_blank" style="border: none;"><img typeof="foaf:Image" src="https://www.uit.edu.vn/sites/vi/files/uploads/files/ads/201712/tuyen_dung_0.png" width="400" height="400" alt="Tuyển Tiến sĩ ngành CNTT / Truyền thông" title="Tuyển Tiến sĩ ngành CNTT / Truyền thông">
+	</a>
+</div>    
 <!--div class="content-right"> 
 	<ul>
 		<li>
