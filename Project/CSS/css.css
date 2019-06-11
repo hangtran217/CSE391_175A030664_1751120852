@@ -172,13 +172,14 @@
     box-shadow: 6px 6px #d8d8d8;
     margin-right: 20px;
     margin-bottom: 40px;
+    margin-top: 50px;
 
 }
 
 
 .thang {
 	position: absolute;
-    top: 1793px;
+    top: 1950px;
     font-size: 12px;
     color: #FFF;
     background: #009ED8;
@@ -190,7 +191,7 @@
 
 .ngay {
     position: absolute;
-    top: 1817px;
+    top: 1974px;
     font-size: 18px;
     font-weight: bold;
     background: #E7F6F3;
@@ -203,7 +204,7 @@
 
 .thang1 {
 	position: absolute;
-    top: 1125px;
+    top: 1262px;
     font-size: 12px;
     color: #FFF;
     background: #009ED8;
@@ -215,7 +216,7 @@
 
 .ngay1 {
     position: absolute;
-    top: 1149px;
+    top: 1286px;
     font-size: 18px;
     font-weight: bold;
     background: #E7F6F3;
@@ -253,8 +254,9 @@
 	content: "\f105"; 	
 	font-family: FontAwesome;					/*Tạo ">" */
 	float: left;
-    margin-top: 5px !important;
-    display: block;
+  margin-top: 5px !important;
+  display: block;
+  font-size: 14px !important;
 }
 
 .top-title {
@@ -383,8 +385,8 @@
 }
 
 #foot3{
-	float: right;
-	width: 300px;
+	float: left;
+	width: 200px;
 	padding: 10px;
 }
 
@@ -605,6 +607,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.navbar {
+  padding-right: 13%;
+  padding-left: 13%;
+  font-size: 18px;
+}
+
+
 .navbar, .navbar div {
 	font-weight: bold;
 	max-width: 100%;
@@ -614,7 +623,10 @@ body {
 
 }
 
-
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #fff;
+  color: #009ed8;
+}
 
 
 .navbar a {
@@ -644,15 +656,13 @@ body {
   cursor: pointer;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #fff;
-  color: #009ed8;
-}
+
 
 .dropdown-content {
+  font-weight: lighter!important;
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #f9f9f9!important;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -678,6 +688,7 @@ body {
 
 /* Slideshow container */
 .slideshow-container {
+	position: relative;
   max-width: 948px;
   margin-left: 35px;
 }
@@ -697,10 +708,11 @@ body {
   padding: 16px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 30px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  background: none;
 }
 
 /* Position the "next button" to the right */
@@ -711,7 +723,24 @@ body {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: none;
+  color: blue;
+}
+
+.prev:before{
+	font-family: "flexslider-icon";
+    font-size: 40px;
+    line-height: 1;
+    display: inline-block;
+    content: '\f001';
+}
+
+.next:before {
+	font-family: "flexslider-icon";
+    font-size: 40px;
+    line-height: 1;
+    display: inline-block;
+    content: '\f002';
 }
 
 /* Caption text */
@@ -753,3 +782,10 @@ body {
   to {opacity: 1}
 }
 
+@font-face {
+  font-family: 'flexslider-icon';
+  src: url('../plugin/flexslider-icon.eot');
+  src: url('../plugin/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('../plugin/flexslider-icon.woff') format('woff'), url('../plugin/flexslider-icon.ttf') format('truetype'), url('../plugin/flexslider-icon.svg#flexslider-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
