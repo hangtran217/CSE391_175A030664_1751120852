@@ -173,7 +173,6 @@
     margin-right: 20px;
     margin-bottom: 40px;
     margin-top: 50px;
-
 }
 
 
@@ -527,7 +526,7 @@ footer{
 
 .content-right ul li i {
 	display: block !important;
-    list-style-type: disc;
+  list-style-type: disc;
 }
 
 .right-social {
@@ -791,23 +790,32 @@ body {
 }
 
 
-@media (max-width: 1280px) and (min-width: 978px)
-.row {
-    margin-left: -10px;
-}
-@media (min-width: 1200px)
-.row {
-    margin-left: -30px;
-    *zoom: 1;
+/*nav*/
+
+.dao-tao {
+  padding-left: 0!important;
+  list-style-type: none!important;
 }
 
-.item-list ul li {
-  padding-top: 5px;
-  list-style-type: none;
+.dao-tao2 { 
+  z-index: 2;
+  float: left;
+  background-color: white!important;
 }
 
-.item-list ul li a {
-  border-radius: 3px 3px 3px 3px;
-  background-color: #009ED8;
-    padding: 2px 0;
+.dao-tao1 {
+  z-index: 2;
+  float: left;
+  background-color: white!important;
 }
+
+.dao-tao3 {
+  z-index: 2;
+  background-color: white!important;
+}
+
+
+
+
+
+
